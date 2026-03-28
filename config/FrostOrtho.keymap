@@ -158,10 +158,10 @@
 
         default_layer {
             bindings = <
-&kp SEMI  &kp COMMA     &kp DOT       &kp P                        &kp Q                                         &kp Y            &kp G           &kp D  &kp M      &kp F
-&kp A     &kp O         &kp E         &lt 3 I                      &kp U                                         &kp B            &kp N           &kp T  &kp R      &kp S
-&kp Z     &kp X         &kp C         &kp V                        &kp W                                         &kp H            &kp J           &kp K  &kp L      &kp MINUS
-&none     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG_HANJA  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT LANG1      &lt 2 BACKSPACE  &lt 0 KP_ENTER  &none  &lt 4 F10  &mt RIGHT_SHIFT INTERNATIONAL_1
+&kp SEMI  &kp COMMA     &kp DOT       &kp P                        &kp Q                                         &kp Y            &kp G         &kp D  &kp M      &kp F
+&kp A     &kp O         &kp E         &lt 3 I                      &kp U                                         &kp B            &kp N         &kp T  &kp R      &kp S
+&kp Z     &kp X         &kp C         &kp V                        &kp W                                         &kp H            &kp J         &kp K  &kp L      &kp MINUS
+&none     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG_HANJA  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT LANG1      &lt 2 BACKSPACE  &kp KP_ENTER  &none  &lt 4 F10  &mt RIGHT_SHIFT INTERNATIONAL_1
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -235,10 +235,10 @@
 
         layer_7 {
             bindings = <
-&kp LC(Z)  &kp LC(Y)    &trans       &trans       &trans              &trans  &trans  &trans  &trans  &trans
-&trans     &trans       &trans       &trans       &trans              &trans  &trans  &trans  &trans  &trans
-&trans     &screenshot  &kp LC(INS)  &kp LS(INS)  &trans              &trans  &trans  &trans  &trans  &trans
-&trans     &trans       &trans       &trans       &trans  &trans      &trans  &trans  &trans  &trans  &trans
+&kp LC(Z)  &kp LC(Y)  &trans       &trans       &trans              &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans       &trans       &trans              &trans  &trans  &trans  &trans  &trans
+&trans     &none      &kp LC(INS)  &kp LS(INS)  &trans              &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans       &trans       &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
