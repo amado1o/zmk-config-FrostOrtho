@@ -83,14 +83,14 @@
         wrap_brace: wrap_brace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(RIGHT_BRACKET) &kp LS(NON_US_BSLH) &kp LEFT_ARROW>;
+            bindings = <&kp LS(RIGHT_BRACKET) &kp LS(BACKSLASH) &kp LEFT_ARROW>;
             label = "WRAP_BRACE";
         };
 
         wrap_bracket: wrap_bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACKET &kp NON_US_BACKSLASH &kp LEFT_ARROW>;
+            bindings = <&kp RIGHT_BRACKET &kp BACKSLASH &kp LEFT_ARROW>;
             label = "WRAP_BRACKET";
         };
 
@@ -149,13 +149,13 @@
 
         default_layer {
             bindings = <
-&kp SEMI  &kp COMMA     &kp DOT       &kp P                        &kp Q                                         &kp Y            &kp G         &kp D  &kp M      &kp F
-&kp A     &kp O         &kp E         &lt 3 I                      &kp U                                         &kp B            &kp N         &kp T  &kp R      &kp S
-&kp Z     &kp X         &kp C         &kp V                        &kp W                                         &kp H            &kp J         &kp K  &kp L      &kp MINUS
-&none     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG_HANJA  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT LANG1      &lt 2 BACKSPACE  &kp KP_ENTER  &none  &lt 4 F10  &mt RIGHT_SHIFT INTERNATIONAL_1
+&kp SEMI  &kp COMMA     &kp DOT       &kp P                        &kp Q                                         &kp Y            &kp G        &kp D  &kp M      &kp F
+&kp A     &kp O         &kp E         &lt 3 I                      &kp U                                         &kp B            &kp N        &kp T  &kp R      &kp S
+&kp Z     &kp X         &kp C         &kp V                        &kp W                                         &kp H            &kp J        &kp K  &kp L      &kp MINUS
+&none     &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANG_HANJA  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT LANG1      &lt 2 BACKSPACE  &lt 1 ENTER  &none  &lt 4 F10  &mt RIGHT_SHIFT INTERNATIONAL_1
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&scroll_up_down>, <&rsr_trans>;
         };
 
         layer_1 {
@@ -182,10 +182,10 @@
 
         layer_3 {
             bindings = <
-&kp APOSTROPHE  &kp LS(NUMBER_1)  &kp LS(SLASH)   &none  &none               &kp PAGE_UP    &kp BACKSPACE  &kp ESCAPE  &kp DELETE  &kp LS(NON_US_BSLH)
-&kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none  &none               &kp LEFT       &kp DOWN       &kp UP      &kp RIGHT   &kp TILDE2
-&none           &kp NON_US_BSLH   &kp SLASH       &none  &none               &kp PAGE_DOWN  &kp HOME       &kp F2      &kp END     &kp LS(INTERNATIONAL_3)
-&none           &none             &none           &none  &kp TAB  &none      &kp DELETE     &kp ESCAPE     &none       &none       &none
+&kp APOSTROPHE  &kp LS(NUMBER_1)  &kp LS(SLASH)   &none     &none                 &kp PAGE_UP    &kp BACKSPACE  &kp ESCAPE       &kp DELETE  &kp LS(NON_US_BSLH)
+&kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &none                 &kp LEFT       &kp DOWN       &kp UP           &kp RIGHT   &kp TILDE2
+&none           &kp NON_US_BSLH   &kp SLASH       &none     &none                 &kp PAGE_DOWN  &kp HOME       &kp F2           &kp END     &kp LS(INTERNATIONAL_3)
+&none           &none             &none           &kp HOME  &kp TAB  &kp END      &kp DELETE     &kp ESCAPE     &kp PRINTSCREEN  &none       &none
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
